@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Fivem Log Bot</title>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../Css/style.css">
+</head>
+<body>
+		<div class="row">
+      <%userslist.forEach(user => {%>
+			<div class="login-head bg-dark text-light p-3">
+			<h5 class="text-center text-uppercase m-0"><%= user.icName %></h5>
+			<button class="btn btn-primary btn-block btn-lg"> Pistol &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= user.pistol %> </button>	
+			<button class="btn btn-primary btn-block btn-lg"> Pistol50 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= user.pistol50 %> </button>	
+			<button class="btn btn-primary btn-block btn-lg"> BullpupRilfe &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= user.bullpuprifle %> </button>	
+			<button class="btn btn-primary btn-block btn-lg"> Smg &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= user.smg %> </button>	
+  <button class="btn btn-primary btn-block btn-lg"> PumpShot_Mk2 &nbsp;&nbsp;&nbsp;&nbsp;<%= user.pumpshotgun_mk2 %> </button>
+			<button class="btn btn-primary btn-block btn-lg"> CarbineRifle &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= user.carbinerifle %> </button>	
+			<button class="btn btn-primary btn-block btn-lg"> AdvancedRifle &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= user.advancedrifle %> </button>	
+			<button class="btn btn-primary btn-block btn-lg"> CombatPdw &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= user.combatpdw %> </button>	
+			<button class="btn btn-primary btn-block btn-lg"> GusenBerg &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= user.gusenberg %> </button>	
+			<button class="btn btn-primary btn-block btn-lg"> CombatPistol  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= user.combatpistol %> </button>	
+			<button class="btnn-tax btn-block btn-lg"> Tax &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= user.tax %> </button>	
+			</div>
+        <%})%>
+		</div>
+		
+</body>
+</html>
